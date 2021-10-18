@@ -5,22 +5,24 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Header from './component/header/Header';
 import Home from './pages/Home/Home';
-import Services from './pages/Services';
+import Services from './pages/Services/Services'
 import About from './pages/About/About';
 import Shop from './pages/Shop/Shop';
 import Contact from './Contact/Contact';
 import Login from './pages/Login/Login';
-import NotFound from './pages/NotFound';
-import Register from './pages/register/Register';
+import NotFound from './pages/NotFound/NotFound';
+import Register from './pages/register/Signup';
+import AuthProvider from './contexts/AuthProvider';
 function App() {
   return (
     <div className="App">
+      <AuthProvider>
       <BrowserRouter>
         <Header></Header>
         <Switch>
-          <Route exact path= "/home">
+          <Route exact path="/">
             <Home></Home>
-          </Route>
+         </Route>
           <Route path= "/home">
             <Home></Home>
           </Route>
@@ -43,10 +45,11 @@ function App() {
          ,<Register></Register>
           </Route>
           <Route path= "*">
-         <NotFound></NotFound>
+       <NotFound></NotFound>
           </Route>
       </Switch>
       </BrowserRouter>
+      </AuthProvider>
     </div>
   );
 }
