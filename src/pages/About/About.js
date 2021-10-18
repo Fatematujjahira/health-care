@@ -2,12 +2,21 @@ import React from 'react';
 import './about.css';
 import Slide from 'react-reveal/Slide';
 import Bounce from "react-reveal/Bounce";
+import img from '../../assets/images/banner2 (1).jpg'
+import img1 from '../../assets/doctor/austin-distel-7bMdiIqz_J4-unsplash.jpg'
+
+import img3 from '../../assets/doctor/img2.jpg'
+import img4 from '../../assets/doctor/engin-akyurt-YmM4EkZ1_v8-unsplash.jpg'
+import img5 from '../../assets/doctor/humberto-chavez-FVh_yqLR9eA-unsplash.jpg'
+import img6 from '../../assets/doctor/pexels-anna-shvets-4167541.jpg'
+import img7 from '../../assets/images/banner2 (2).jpg'
 const About = () => {
     return (
         <div className="container">
-      <div className="about-section">
+        <div className="about-section">
+          <h1>ABOUT OUR AGENCY</h1>
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-md-7">
           
              <div className="about-image">
              <Slide left>
@@ -16,7 +25,7 @@ const About = () => {
             </div>
             
           </div>
-          <div className="col-md-6">
+          <div className="col-md-5 col-sm-12">
             <div className="about-right-section text-start p-4">
               <Bounce right>
               <h1 className="mt-5"><span className="display-6">We Offer</span> <br />
@@ -35,11 +44,64 @@ const About = () => {
                 trust them to behave.
               </p>
               </Bounce>
+              </div>
+              
             </div>
-          </div>
+            </div>
         </div>
-      </div>
+        <div className="about-section">
+          <h1>About our doctior</h1>
+         
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src={img} class="card-img-top" alt="..."/>
+     
     </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src={img1} class="card-img-top" alt="..."/>
+     
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src={img3} class="card-img-top" alt="..."/>
+     
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src={img4} class="card-img-top" alt="..."/>
+     
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src={img5} class="card-img-top" alt="..."/>
+     
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src={img7} class="card-img-top" alt="..."/>
+     
+    </div>
+  </div>
+  
+    </div>
+    
+  </div>
+</div>
+       
+     
+
+           
+    
+      
+      
+     
     );
 };
 

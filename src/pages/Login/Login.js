@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Form, FormControl, InputGroup, Row } from "react-bootstrap";
 import useAuth from "../../hooks/useAuth";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faLock } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faKey } from "@fortawesome/free-solid-svg-icons";
 import { NavLink, useLocation, useHistory } from "react-router-dom";
 import google from "../../assets/images/google.png";
 import facebook from "../../assets/images/facebook.png";
@@ -71,7 +71,7 @@ const Login = () => {
               </Form.Label>
               <InputGroup className="mb-2">
                 <InputGroup.Text>
-                  <FontAwesomeIcon icon={faLock}></FontAwesomeIcon>
+                  <FontAwesomeIcon icon={faKey}></FontAwesomeIcon>
                 </InputGroup.Text>
                 <FormControl
                   onBlur={getPassword}

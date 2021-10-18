@@ -1,0 +1,13 @@
+/* .information {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    margin: 10px;
+}  */
+.doctors {
+    height: 50vh;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid gray;
+
+}

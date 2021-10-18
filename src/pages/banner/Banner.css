@@ -1,17 +1,4 @@
-.banner{
-    background-image: url('https://health.templines.org/wp-content/uploads/revslider/home1/slide2.jpg'),
-      linear-gradient(rgba(0, 0, 0, 0.2), rgba(6, 6, 6, 0.3));
-    /* height:600px;
-     
-    /* border: 1px solid red; */
-    height: 90vh;
-    width: 100%;
-    background-blend-mode: overlay;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
+
 .title1{
     
     font-weight: 700;
@@ -26,4 +13,7 @@
     background-color: tomato;
     border-radius: 1px solid tomato;
     transition: 0.5s;
+}
+.slider{
+    height: 90vh;
 }

@@ -14,6 +14,8 @@ import NotFound from './pages/NotFound/NotFound';
 import Register from './pages/register/Signup';
 import AuthProvider from './contexts/AuthProvider';
 import Reset from './pages/reset/Reset';
+import Signup from './pages/register/Signup';
+import Details from './pages/Detail/Details/Details';
 function App() {
   return (
     <div className="App">
@@ -42,12 +44,15 @@ function App() {
           <Route path= "/login">
          <Login></Login>
           </Route>
-          <Route path= "/register">
-         ,<Register></Register>
+          <Route path= "/signup">
+         <Signup></Signup>
           </Route>
           
           <Route path="/reset">
               <Reset></Reset>
+            </Route>
+          <Route path="/details/:serviceId">
+              <Details></Details>
             </Route>
           <Route path= "*">
        <NotFound></NotFound>

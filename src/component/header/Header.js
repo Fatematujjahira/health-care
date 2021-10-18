@@ -26,20 +26,20 @@ return (
           <Nav.Link as={NavLink} to="/home" className="nav-item text-white fw-bold">
             Home
           </Nav.Link>
-
+          <Nav.Link as={NavLink} to="/service" className="nav-item text-white fw-bold">
+           our Services
+          </Nav.Link>
           <Nav.Link as={NavLink} to="/about" className="nav-item text-white fw-bold">
             About
           </Nav.Link>
           <Nav.Link as={NavLink} to="/shop" className="nav-item text-white fw-bold">
-            About
+            News
           </Nav.Link>
 
           <Nav.Link as={NavLink} to="/contact" className="nav-item text-white fw-bold">
             Contact
           </Nav.Link>
-          <Nav.Link as={NavLink} to="/service" className="nav-item text-white fw-bold">
-            Service
-          </Nav.Link>
+         
           
 
           {!displayName ? (
