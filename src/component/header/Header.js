@@ -2,43 +2,85 @@ import React from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import logo from '../../assets/images/logo.jpg'
+import useAuth from '../../hooks/useAuth';
+// import { HashLink } from "react-router-hash-link";
+import './Header.css'
 const Header = () => {
-    return (
-        <div>
-            <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
-  <Container>
-  <Navbar.Brand href="#home">
-        <img
-          alt=""
-          src={logo}
-          width="40"
-          height="40"
-          className="d-inline-block align-top"
-        />{' '}
-      Healthcare Agency
+   
+const { AllContexts } = useAuth();
+const { user, logOut } = AllContexts;
+const { displayName, photoURL, email } = user;
+return (
+
+    <>
+    <Navbar expand="lg" className="bg-primary">
+    <Container>
+      <Navbar.Brand as={NavLink}        className="text-white" to="/home">
+        <img width="50px" 
+         src={logo} alt="Logo" />{" "} 
+        <span className="title"> HEALTH CARE</span>
       </Navbar.Brand>
-  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-  <Navbar.Collapse id="responsive-navbar-nav">
-    <Nav className="ms-auto">
-      <Nav.Link as={NavLink} to="/home" className="text-white fw-bold">Home</Nav.Link>
-      <Nav.Link as={NavLink} to="/services" className="text-white" >Services</Nav.Link>
-      <Nav.Link as={NavLink} to="/about" className="text-white" >About</Nav.Link>
-      <Nav.Link as={NavLink} to="/shop" className="text-white" >Shop</Nav.Link>
-      <Nav.Link as={NavLink} to="/contact" className="text-white" >Contact</Nav.Link>
-      <Nav.Link as={NavLink} to="/login" className="text-white" >Login</Nav.Link>
-      <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-      </NavDropdown>
-    </Nav>
-    
-  </Navbar.Collapse>
-  </Container>
-</Navbar>
-        </div>
+      <Navbar.Toggle        aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="ms-auto align-items-center">
+          <Nav.Link as={NavLink} to="/home" className="nav-item text-white fw-bold">
+            Home
+          </Nav.Link>
+
+          <Nav.Link as={NavLink} to="/about" className="nav-item text-white fw-bold">
+            About
+          </Nav.Link>
+          <Nav.Link as={NavLink} to="/shop" className="nav-item text-white fw-bold">
+            About
+          </Nav.Link>
+
+          <Nav.Link as={NavLink} to="/contact" className="nav-item text-white fw-bold">
+            Contact
+          </Nav.Link>
+          <Nav.Link as={NavLink} to="/service" className="nav-item text-white fw-bold">
+            Service
+          </Nav.Link>
+          
+
+          {!displayName ? (
+            <>
+              <Nav.Link as={NavLink} to="/signup" className="nav-item text-white fw-bold">
+                Sign Up
+              </Nav.Link>
+
+              <Nav.Link className="nav-item text-white fw-bold" as={NavLink} to="/login">
+                Log in
+              </Nav.Link>
+            </>
+          ) : (
+            <NavDropdown
+              title={
+                    <img
+                    style={{
+                    width: "45px",
+                    borderRadius: "50%",
+                  }}
+                    src={photoURL}
+                    alt=""
+                />
+              }
+            >
+              <div className="text-center">
+                <h6>{displayName}</h6>
+                <p className="m-0 mb-2">{email}</p>
+                <button onClick={logOut} className="button-logout">
+                  Sign Out
+                </button>
+              </div>
+            </NavDropdown>
+          )}
+        </Nav>
+        </Navbar.Collapse>
+       </Container>
+       </Navbar>
+ </>
+       
+
     );
 };
 

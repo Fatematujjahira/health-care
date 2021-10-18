@@ -18,7 +18,8 @@ const Banner = () => {
           >
             <div className="text-center my-5 py-5">
               <Bounce left cascade>
-                <h1 className="title1 text-white ">To Take Care Of Your Health</h1>
+                  <h1 className="title1 text-info  ">We always put the patients first
+                  </h1>
               </Bounce>
               <Bounce right cascade>
               <h6 className="my-4 text-white fs-5">
@@ -26,15 +27,24 @@ const Banner = () => {
                 </h6>
               </Bounce>
 
-             
-              <Bounce>
+            <div className=" d-flex justify-content-center ">      
+                <Bounce>
                 <NavLink
                   to="/services"
-                  className=" button rounded-pill btn btn-primary fs-5 py-2 px-4"
+                  className=" button btn btn-primary fs-5 py-2 px-4"
                 >
                   View Details
                 </NavLink>
               </Bounce>
+              <Bounce>
+                <NavLink 
+                  to="/services"
+                  className=" button btn btn-outline-primary  fs-5 py-2 px-4"
+                >
+                  Read more
+                </NavLink>
+              </Bounce>
+            </div>
             </div>
           </div>
         </Container>

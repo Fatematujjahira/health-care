@@ -1,0 +1,15 @@
+
+.button-logout{
+    background-color: rgb(15, 126, 246);
+    color: white;
+    border: 1px solid rgb(15, 126, 246);
+    border-radius: 16px;
+}
+.button-logout:hover{
+    background-color: tomato;
+    color: white;
+    border: 1px solid tomato;
+    border-radius: 16px;
+       
+}
+

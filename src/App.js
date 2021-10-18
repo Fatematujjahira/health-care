@@ -13,6 +13,7 @@ import Login from './pages/Login/Login';
 import NotFound from './pages/NotFound/NotFound';
 import Register from './pages/register/Signup';
 import AuthProvider from './contexts/AuthProvider';
+import Reset from './pages/reset/Reset';
 function App() {
   return (
     <div className="App">
@@ -26,7 +27,7 @@ function App() {
           <Route path= "/home">
             <Home></Home>
           </Route>
-          <Route path= "/services">
+          <Route path= "/service">
             <Services></Services>
           </Route>
           <Route path= "/about">
@@ -44,6 +45,10 @@ function App() {
           <Route path= "/register">
          ,<Register></Register>
           </Route>
+          
+          <Route path="/reset">
+              <Reset></Reset>
+            </Route>
           <Route path= "*">
        <NotFound></NotFound>
           </Route>
