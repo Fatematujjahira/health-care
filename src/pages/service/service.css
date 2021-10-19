@@ -8,4 +8,8 @@
   }
   .serviceimg {
       height: 240px;
+      border-bottom: 1px;
+  }
+  .name{
+      border-top: 1px solid rgb(149, 149, 149);
   }

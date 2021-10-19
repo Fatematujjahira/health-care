@@ -1,9 +1,32 @@
 import React from 'react';
-
+import './NotFound.css';
+import notFound from '../../assets/images/404-page.gif'
+import { NavLink } from 'react-router-dom';
 const NotFound = () => {
     return (
-        <div>
-            <h1>not fd</h1>
+        <div className="container">
+            <div className="notFound">
+                <img src={ notFound } alt="" />
+              
+      <div className=" d-flex justify-content-center ">      
+            
+                <NavLink
+                  to="/services"
+                  className=" button btn btn-primary fs-5 py-2 px-4"
+                >
+                  View Details
+                </NavLink>
+             
+                <NavLink 
+                  to="/about"
+                  className=" button btn btn-outline-primary  fs-5 py-2 px-4"
+                >
+                  Read More
+                </NavLink>
+            
+            </div>
+               
+           </div>
         </div>
     );
 };

@@ -6,7 +6,8 @@ import './Contact.css'
 const Contact = () => {
     return (
         <div className="container">
-      <div className="about-section">
+        <div className="about-section">
+          <h1><i class="far fa-address-book"></i> Connect With Us</h1>
         <div className="row">
           <div className="col-md-6">
           
