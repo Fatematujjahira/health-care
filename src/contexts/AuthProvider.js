@@ -13,11 +13,8 @@ const AuthProvider = ({ children }) => {
 
   const data = {
     AllContexts,
-    // courses,
-    // addToCart,
-    // selectedCourse,
-    // remove,
-    // setSelectedCourse,
+    
+   
   };
 
   return <AuthContext.Provider value={data}>{children}</AuthContext.Provider>;

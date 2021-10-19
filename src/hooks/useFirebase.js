@@ -36,7 +36,7 @@ const useFirebase = () => {
   useEffect(() => {
     setTimeout(() => {
       setError("");
-    }, 5000);
+    }, 6000);
   }, [error]);
 
   // google sign in
@@ -54,9 +54,8 @@ const useFirebase = () => {
     return signInWithPopup(auth, fbProvider);
   }
   // Email sign in
-  function signInWithEmail(e) {
-    e.preventDefault();
-    return signInWithEmailAndPassword(auth, email, password);
+  function signInWithEmail() {
+      return signInWithEmailAndPassword(auth, email, password);
   }
   // set name and profile image url
   function setNameAndImage() {

@@ -34,9 +34,13 @@ const Login = () => {
       <p className="text-danger text-center">{error}</p>
       <div className="w-25 mx-auto">
         <Form
-          onSubmit={() => {
+          onSubmit={ (e) =>
+          {
+            e.preventDefault();
             signInWithEmail()
-              .then((result) => {
+              
+              .then((result) =>
+              {
                 setUser(result.user);
                 history.push(redirect);
               })

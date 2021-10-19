@@ -16,6 +16,8 @@ import AuthProvider from './contexts/AuthProvider';
 import Reset from './pages/reset/Reset';
 import Signup from './pages/register/Signup';
 import Details from './pages/Detail/Details/Details';
+import Footer from './pages/Footer/Footer';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
 function App() {
   return (
     <div className="App">
@@ -51,13 +53,16 @@ function App() {
           <Route path="/reset">
               <Reset></Reset>
             </Route>
-          <Route path="/details/:serviceId">
+
+          <PrivateRoute path="/details/:serviceId">
               <Details></Details>
-            </Route>
+          </PrivateRoute>
+
           <Route path= "*">
        <NotFound></NotFound>
           </Route>
-      </Switch>
+          </Switch>
+          <Footer></Footer>
       </BrowserRouter>
       </AuthProvider>
     </div>

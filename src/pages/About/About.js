@@ -13,8 +13,9 @@ import img7 from '../../assets/images/banner2 (2).jpg'
 const About = () => {
     return (
         <div className="container">
-        <div className="about-section">
+        <div className="about-section mb-5">
           <h1>ABOUT OUR AGENCY</h1>
+         
         <div className="row">
           <div className="col-md-7">
           
@@ -49,51 +50,60 @@ const About = () => {
             </div>
             </div>
         </div>
-        <div className="about-section">
-          <h1>About our doctior</h1>
-         
-  <div class="row row-cols-1 row-cols-md-3 g-4">
-  <div class="col">
+        <div className="about-section mt-5 ">
+          <h4>MEET OUR EXPERIENCED DOCTOR</h4>
+          <h1>WE ARE EXPERTS IN OUR FIELD</h1>
+        
+  <div class="row row-cols-1 row-cols-md-3 g-4 mt-4 mb-5">
+            <div class="col">
+           
     <div class="card h-100">
       <img src={img} class="card-img-top" alt="..."/>
-     
+       <h3>Dr.Farin</h3>
     </div>
+   
   </div>
   <div class="col">
     <div class="card h-100">
       <img src={img1} class="card-img-top" alt="..."/>
-     
+     <h3>Dr. Oliver</h3>
     </div>
   </div>
   <div class="col">
     <div class="card h-100">
       <img src={img3} class="card-img-top" alt="..."/>
-     
+      <h3>Dr. diana</h3>
     </div>
-  </div>
+     </div>
+     </div>
+          <h1 className="mt-4">CARDILOGY SPESIALIST</h1>
+          <hr className="w-50 mx-auto" />
+  <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
   <div class="col">
     <div class="card h-100">
       <img src={img4} class="card-img-top" alt="..."/>
-     
+      <h3>Dr. Jeswa</h3>
     </div>
   </div>
   <div class="col">
     <div class="card h-100">
       <img src={img5} class="card-img-top" alt="..."/>
-     
+      <h3>Dr. Nastya</h3>
     </div>
   </div>
   <div class="col">
     <div class="card h-100">
       <img src={img7} class="card-img-top" alt="..."/>
-     
+      <h3>Dr. Gaby</h3>
     </div>
   </div>
   
     </div>
+   
+    </div>
     
   </div>
-</div>
+
        
      
 
