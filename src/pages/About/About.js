@@ -16,7 +16,7 @@ const About = () => {
         <div className="container ">
         <div className="about-section mb-5">
         <Bounce left cascade >
-            <h1 >ABOUT OUR AGENCY</h1>
+            <h1 className="mt-5">ABOUT OUR AGENCY</h1>
             <hr className="w-50 mx-auto" />
          </Bounce>
         <div className="row">
@@ -24,7 +24,7 @@ const About = () => {
           
              <div className="about-image">
              <Slide left>
-              <img className="w-100 mt-5 pt-5 m-2" src="https://images.pexels.com/photos/3946832/pexels-photo-3946832.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
+              <img className="w-100 mt-2 pt-5 m-1" src="https://images.pexels.com/photos/3946832/pexels-photo-3946832.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
               </Slide>
               </div>
             
@@ -32,7 +32,7 @@ const About = () => {
           <div className="col-md-5 col-sm-12">
               <div className="about-right-section text-start p-4">
               <Bounce right>
-              <h1 className="mt-5"><span className="display-6">We Offer</span> <br />
+              <h1 className="mt-2"><span className="display-6">We Offer</span> <br />
                 <span className="text-dark fw-bold display-5">Fast & Reliable</span> <br />
                 <span className="text-info  ">Medical & HealthCare</span> <br />
                 <span className="text-info">
@@ -54,7 +54,7 @@ const About = () => {
             </div>
         </div>
        
-        <div className="second mt-5 ">
+        <div className="second mt-2">
         <Slide right cascade>
            <h2 className="display-5 ">Welcome to <span className="display-6 fw-bold text-info">HEALTHCARE AGENCY</span></h2>
            </Slide>
