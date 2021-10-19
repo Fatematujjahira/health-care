@@ -20,7 +20,7 @@ const About = () => {
             <hr className="w-50 mx-auto" />
          </Bounce>
         <div className="row">
-        <div className="col-md-7">
+        <div className="col-md-7 col-sm-12">
           
              <div className="about-image">
              <Slide left>
@@ -62,47 +62,47 @@ const About = () => {
            <h6>WE ARE EXPERTS IN OUR FIELD</h6>
           <hr className="w-50 mx-auto" />
           
-          <div class="row row-cols-1 row-cols-md-3 g-4 mt-4 mb-5">
-            <div class="col">
+          <div className="row row-cols-1 row-cols-md-3 g-4 mt-4 mb-5">
+            <div className="col">
            
-       <div class="card h-100">
+       <div className="card h-100">
          
-           <img src={img} class="card-img-top" alt="..."/>
+           <img src={img} className="card-img-top" alt="..."/>
            <h3 className="bg-info text-white">Dr.Farin</h3>
        </div>
    
        </div>
-       <div class="col">
-       <div class="card h-100">
-           <img src={img1} class="card-img-top" alt="..."/>
+       <div className="col">
+       <div className="card h-100">
+           <img src={img1} className="card-img-top" alt="..."/>
            <h3 className=" bg-info text-white">Dr. Oliver</h3>
        </div>
        </div>
-       <div class="col">
-       <div class="card h-100">
-          <img src={img3} class="card-img-top" alt="..."/>
+       <div className="col">
+       <div className="card h-100">
+          <img src={img3} className="card-img-top" alt="..."/>
           <h3 className=" bg-info text-white">Dr. diana</h3>
       </div>
       </div>
       </div>
           <h2 className="mt-5"><span className=" fw-bold text-info"> CARDILOGY </span>SPESIALIST</h2>
           <hr className="w-50 mx-auto" />
-       <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
-       <div class="col">
-       <div class="card h-100">  
-         <img src={img4} class="card-img-top" alt="..."/>
+       <div className="row row-cols-1 row-cols-md-3 g-4 mt-4">
+       <div className="col">
+       <div className="card h-100">  
+         <img src={img4} className="card-img-top" alt="..."/>
          <h3 className=" bg-info text-white">Dr. Jeswa</h3>
          </div>
          </div>
-      <div class="col">
-      <div class="card h-100">
-         <img src={img5} class="card-img-top" alt="..."/>
+      <div className="col">
+      <div className="card h-100">
+         <img src={img5} className="card-img-top" alt="..."/>
          <h3 className=" bg-info text-white">Dr. Nastya</h3>
      </div>
      </div>
-     <div class="col">
-     <div class="card h-100">
-      <img src={img7} class="card-img-top" alt="..."/>
+     <div className="col">
+     <div className="card h-100">
+      <img src={img7} className="card-img-top" alt="..."/>
       <h3 className=" bg-info text-white">Dr. Gaby</h3>
       </div>
       </div>

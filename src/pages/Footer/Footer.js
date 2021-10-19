@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-md-3 col-sm-6">
               <div className="left-container text-start">
-                <h2><i class="fas fa-user-md"></i>HelthCare Agency</h2><br />
+                <h2><i className="fas fa-user-md"></i>HelthCare Agency</h2><br />
                   
                 <p className="mt-4 ">
                   <small>
@@ -30,19 +30,19 @@ const Footer = () => {
       <div className="d-flex justify-content-center ">
      
      <div className="m-2 ">
-      <h3><i class="fab fa-facebook-square icon text-primary"></i></h3>
+      <h3><i className="fab fa-facebook-square icon text-primary"></i></h3>
       </div>
       <div className="m-2 ">
-      <h3><i class="fab fa-instagram icon text-danger"></i></h3>
+      <h3><i className="fab fa-instagram icon text-danger"></i></h3>
       </div>
       <div className="m-2">
-      <h3><i class="fab fa-linkedin icon text-primary"></i></h3>
+      <h3><i className="fab fa-linkedin icon text-primary"></i></h3>
       </div>
       <div className="m-2">
-      <h3><i class="fab fa-youtube text-danger icon  "></i></h3>
+      <h3><i className="fab fa-youtube text-danger icon  "></i></h3>
       </div>
       <div className="m-2">
-      <h3><i class="fab fa-twitter icon text-primary"></i></h3>
+      <h3><i className="fab fa-twitter icon text-primary"></i></h3>
       </div>
       </div>
      
@@ -52,7 +52,7 @@ const Footer = () => {
             </div>
             <div className="col-md-4 col-sm-6">
               <div className="footer-news-container">
-                 <h3><i class="fas fa-user-edit"></i>Latest News & tips</h3> <hr />
+                 <h3><i className="fas fa-user-edit"></i>Latest News & tips</h3> <hr />
                  <div className="news">
                <div className="">
              <h6>Cancer treatment for poor peoples</h6>

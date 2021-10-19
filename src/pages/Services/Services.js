@@ -3,7 +3,7 @@ import Service from '../service/Service';
 import './services.css';
 
 import Bounce from "react-reveal/Bounce";
-import { NavLink } from 'react-router-dom';
+
 const Services = () =>
 {
     const [ services, setServices ] = useState([]);
@@ -16,7 +16,7 @@ const Services = () =>
     
     return (
         <div className="">
-            <div className="services-img">
+            {/* <div className="services-img">
             <div className="col col-sm-12">
             <div className="about-right-section mx-auto p-4">
               <Bounce right>
@@ -46,7 +46,7 @@ const Services = () =>
             </div>
               </div>
               </div>
-            </div>
+            </div> */}
             <div className="container ">
                
            
@@ -75,10 +75,10 @@ const Services = () =>
            <div className="">
            <h1 className="text-white">Frequently Asked Question</h1>
            <div className=" list text-white mt-5">
-         <li className="text-info"><i class="fas fa-arrow-circle-right"></i> Can i request a copy of my mri online</li>
-         <li className="text-info"><i class="fas fa-arrow-circle-right"></i> What if I do not have insurance?</li>
-         <li className="text-info"><i class="fas fa-arrow-circle-right"></i> Can I make an appointment online?</li>
-         <li className="text-info"><i class="fas fa-arrow-circle-right"></i> Where can I get the schedule of this agency?</li>
+         <li className="text-info"><i className="fas fa-arrow-circle-right"></i> Can i request a copy of my mri online</li>
+         <li className="text-info"><i className="fas fa-arrow-circle-right"></i> What if I do not have insurance?</li>
+         <li className="text-info"><i className="fas fa-arrow-circle-right"></i> Can I make an appointment online?</li>
+         <li className="text-info"><i className="fas fa-arrow-circle-right"></i> Where can I get the schedule of this agency?</li>
          
          </div>
            </div>
