@@ -11,7 +11,7 @@ import Shop from './pages/Shop/Shop';
 import Contact from './Contact/Contact';
 import Login from './pages/Login/Login';
 import NotFound from './pages/NotFound/NotFound';
-import Register from './pages/register/Signup';
+
 import AuthProvider from './contexts/AuthProvider';
 import Reset from './pages/reset/Reset';
 import Signup from './pages/register/Signup';

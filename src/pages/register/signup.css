@@ -1,16 +1,12 @@
-.submit-img{
-    height: 490px;
-    padding: 10px;
-   
-}
-/* .contact-section{
+.signup{
     
+    height: 80vh;
     width: 100%;
-    background-image: url("https://st3.depositphotos.com/3585621/16367/i/450/depositphotos_163673570-stock-photo-dark-brick-wall.jpg"),
+    background-image: url("https://cdn.pixabay.com/photo/2016/07/08/15/44/banner-1504653_960_720.png"),
       linear-gradient(rgba(7, 7, 7, 0.379), rgba(14, 12, 12, 0.722));
     background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
-} */
+}

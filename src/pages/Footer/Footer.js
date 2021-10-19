@@ -12,8 +12,8 @@ const Footer = () => {
           <div className="row">
             <div className="col-md-3 col-sm-6">
               <div className="left-container text-start">
-                <h1><i class="fas fa-briefcase-medical"></i> HelthCara Agency</h1><br />
-                  <h3><i class="fas fa-user-md"></i>About us</h3>
+                <h2><i class="fas fa-user-md"></i>HelthCare Agency</h2><br />
+                  
                 <p className="mt-4 ">
                   <small>
                     *These statements have not been evaluated by the Food and
@@ -26,13 +26,33 @@ const Footer = () => {
                     
                   </small>
                 </p>
-
+                <div className=""><hr />
+      <div className="d-flex justify-content-center ">
+     
+     <div className="m-2 ">
+      <h3><i class="fab fa-facebook-square icon text-primary"></i></h3>
+      </div>
+      <div className="m-2 ">
+      <h3><i class="fab fa-instagram icon text-danger"></i></h3>
+      </div>
+      <div className="m-2">
+      <h3><i class="fab fa-linkedin icon text-primary"></i></h3>
+      </div>
+      <div className="m-2">
+      <h3><i class="fab fa-youtube text-danger icon  "></i></h3>
+      </div>
+      <div className="m-2">
+      <h3><i class="fab fa-twitter icon text-primary"></i></h3>
+      </div>
+      </div>
+     
+          </div>
               
               </div>
             </div>
             <div className="col-md-4 col-sm-6">
               <div className="footer-news-container">
-                 <h1><i class="fas fa-user-edit"></i>Latest News & tips</h1>
+                 <h3><i class="fas fa-user-edit"></i>Latest News & tips</h3> <hr />
                  <div className="news">
                <div className="">
              <h6>Cancer treatment for poor peoples</h6>
@@ -44,14 +64,16 @@ const Footer = () => {
                 <hr /></div>
                 <div className=""> <h6>Cancer treatment for poor peoples</h6>
                 <p>01th dec 2021</p>
-                <hr /></div>
+                </div>
                                     
                  </div>     
 
               </div>
               </div>
             <div className="col-md-2 col-sm-6">
-              <div className="footer-menu-container">
+             <div className="footer-menu-container">
+                  <h2>Link</h2>
+                 
               <Nav.Link as={NavLink} to="/home" className="nav-item text-white fw-bold">
             Home
           </Nav.Link>
@@ -74,7 +96,8 @@ const Footer = () => {
             </div>
             <div className="col-md-3 col-sm-6">
               <div className="right-footer-container">
-                <h3>Sign up for the next appointment</h3>
+                  <h4>Sign up for the next appointment</h4>
+                  <hr />
                 <input
                   className="footer-input"
                   type="text"
@@ -102,29 +125,9 @@ const Footer = () => {
               </div>
             </div>
           </div>
-      <div className=""><hr />
-      <div className="d-flex justify-content-center ">
-     
-     <div className="m-2 ">
-      <h3><i class="fab fa-facebook-square icon text-primary"></i></h3>
-      </div>
-      <div className="m-2 ">
-      <h3><i class="fab fa-instagram icon text-danger"></i></h3>
-      </div>
-      <div className="m-2">
-      <h3><i class="fab fa-linkedin icon text-primary"></i></h3>
-      </div>
-      <div className="m-2">
-      <h3><i class="fab fa-youtube text-danger icon  "></i></h3>
-      </div>
-      <div className="m-2">
-      <h3><i class="fab fa-twitter icon text-primary"></i></h3>
-      </div>
-      </div>
-      <p>
-      <small> ©fatemajahira All rights reserved.</small>
-      </p>
-          </div>
+          <p>
+          <small> ©fatemajahira All rights reserved.</small>
+          </p>
         </div>
       </div>
     </div>

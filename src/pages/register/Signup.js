@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Form, FormControl, InputGroup, Row } from "react-bootstrap";
 import useAuth from "../../hooks/useAuth";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import './signup.css';
 import {
   faEnvelope,
   faLock,
@@ -17,9 +18,9 @@ const Signup = () => {
     AllContexts;
 
   return (
-    <div className="text-center my-4">
+    <div className="signup text-center my-4 text-white">
       <h2>Please Sign Up</h2>
-      <p className=" mt-2">Sign Up with Email & Password</p>
+      <p className=" mt-2 text-white">Sign Up with Email & Password</p>
       <p className="text-danger text-center">{error}</p>
       <div className="w-25 mx-auto">
         <Form onSubmit={singUp}>

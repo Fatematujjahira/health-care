@@ -11,10 +11,10 @@ const NotFound = () => {
       <div className=" d-flex justify-content-center ">      
             
                 <NavLink
-                  to="/services"
+                  to="/home"
                   className=" button btn btn-primary fs-5 py-2 px-4"
                 >
-                  View Details
+                  Go Back
                 </NavLink>
              
                 <NavLink 

@@ -23,20 +23,20 @@ return (
       <Navbar.Toggle        aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ms-auto align-items-center">
-          <Nav.Link as={NavLink} to="/home" className="nav-item text-white fw-bold">
+          <Nav.Link as={NavLink} to="/home" className="nav-item text-white ">
             Home
           </Nav.Link>
-          <Nav.Link as={NavLink} to="/service" className="nav-item text-white fw-bold">
-           our Services
+          <Nav.Link as={NavLink} to="/service" className="nav-item text-white ">
+           Our Services
           </Nav.Link>
-          <Nav.Link as={NavLink} to="/about" className="nav-item text-white fw-bold">
+          <Nav.Link as={NavLink} to="/about" className="nav-item text-white ">
             About
           </Nav.Link>
-          <Nav.Link as={NavLink} to="/shop" className="nav-item text-white fw-bold">
+          <Nav.Link as={NavLink} to="/shop" className="nav-item text-white ">
             News
           </Nav.Link>
 
-          <Nav.Link as={NavLink} to="/contact" className="nav-item text-white fw-bold">
+          <Nav.Link as={NavLink} to="/contact" className="nav-item text-white">
             Contact
           </Nav.Link>
          
@@ -44,13 +44,13 @@ return (
 
           {!displayName ? (
             <>
-              <Nav.Link as={NavLink} to="/signup" className="nav-item text-white fw-bold">
+            <Nav.Link as={NavLink} to="/signup" className="nav-item text-white fw-bold">
                 Sign Up
-              </Nav.Link>
+            </Nav.Link>
 
-              <Nav.Link className="nav-item text-white fw-bold" as={NavLink} to="/login">
+            <Nav.Link className="nav-item text-white fw-bold" as={NavLink} to="/login">
                 Log in
-              </Nav.Link>
+            </Nav.Link>
             </>
           ) : (
             <NavDropdown
@@ -63,21 +63,21 @@ return (
                     src={photoURL}
                     alt=""
                 />
-              }
-            >
-              <div className="text-center">
+                }
+                >
+                <div className="text-center">
                 <h6>{displayName}</h6>
-                <p className="m-0 mb-2">{email}</p>
+                <p className="m-0 mb-1">{email}</p>
                 <button onClick={logOut} className="button-logout">
                   Sign Out
-                </button>
-              </div>
-            </NavDropdown>
+                 </button>
+                 </div>
+        </NavDropdown>
           )}
         </Nav>
         </Navbar.Collapse>
-       </Container>
-       </Navbar>
+        </Container>
+        </Navbar>
  </>
        
 
