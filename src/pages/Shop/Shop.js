@@ -6,6 +6,7 @@ import img2 from '../../assets/images/health-management.gif';
 import Bounce from "react-reveal/Bounce";
 import Slide from "react-reveal/Slide";
 import './shop.css';
+import { NavLink } from 'react-router-dom';
 const Shop = () => {
     return (
 
@@ -52,7 +53,7 @@ const Shop = () => {
           
              <div className="about-image">
              <Slide left>
-              <img className="w-100 mt-2 pt-5 m-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTezzy6o1n94lAlStN4_rQVHy9Gc-N6S6Q1g&usqp=CAU" alt="" />
+              <img className="w-100 mt-2 pt-5 m-1" src="https://health.templines.org/wp-content/uploads/2017/02/24.jpg" alt="" />
               </Slide>
               </div>
             
@@ -88,40 +89,73 @@ const Shop = () => {
         <Row xs={1} md={3} className="g-4">
        
           <Col>
-            <Card>
+            <Card className="cart">
                     <Card.Img className="latest" variant="top" src={ img }/>
               <Card.Body>
                 <Card.Title>Cancer treatment for poor peoples</Card.Title>
                 <Card.Text>
                   This is a longer card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit longer.
+                  <div className=" d-flex justify-content-center ">      
+                    
+                <Bounce>
+                <NavLink 
+                  to="/about"
+                  className=" button btn btn-outline-primary  fs-5 py-2 px-4"
+                >
+                  Read More
+                </NavLink>
+                </Bounce>
+                </div>
                 </Card.Text>
               </Card.Body>
             </Card>
           </Col>
         
           <Col>
-            <Card>
+            <Card className="cart">
                     <Card.Img className="latest" variant="top" src={ img1 }/>
               <Card.Body>
                 <Card.Title>Disease based on junk foods
-</Card.Title>
+                </Card.Title>
                 <Card.Text>
                   This is a longer card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit longer.
+                   <div className=" d-flex justify-content-center ">      
+                    
+                <Bounce>
+                <NavLink 
+                  to="/about"
+                  className=" button btn btn-outline-primary  fs-5 py-2 px-4"
+                >
+                  Read More
+                </NavLink>
+                </Bounce>
+                </div>
                 </Card.Text>
               </Card.Body>
             </Card>
           </Col>
         
           <Col>
-            <Card>
+            <Card className="cart">
                     <Card.Img className="latest" variant="top" src={ img2 }/>
               <Card.Body>
                 <Card.Title>Cancer treatment for poor peoples</Card.Title>
                 <Card.Text>
                   This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit longer.
+                 lead-in to additional content. This content is a little bit longer.
+                  <div className=" d-flex justify-content-center ">      
+                    
+                    <Bounce>
+                    <NavLink 
+                      to="/about"
+                      className=" button btn btn-outline-primary  fs-5 py-2 px-4"
+                    >
+                      Read More
+                    </NavLink>
+                    </Bounce>
+                    </div>
                 </Card.Text>
               </Card.Body>
             </Card>
