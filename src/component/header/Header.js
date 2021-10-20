@@ -12,7 +12,7 @@ const { user, logOut } = AllContexts;
 const { displayName, photoURL, email } = user;
 return (
 
-    <>
+    <div className="overflow-hidden">
     <Navbar expand="lg" className="bg-primary">
     <Container>
       <Navbar.Brand as={NavLink}        className="text-white" to="/home">
@@ -78,7 +78,7 @@ return (
         </Navbar.Collapse>
         </Container>
         </Navbar>
- </>
+ </div>
        
 
     );

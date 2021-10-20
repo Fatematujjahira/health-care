@@ -9,7 +9,7 @@ import { NavLink } from "react-router-dom";
 import './Banner.css';
 const Banner = () => {
     return (
-        <div>
+        <div className="overflow-hidden">
       <Carousel>
       <Carousel.Item className="slider" interval={2000}>
      

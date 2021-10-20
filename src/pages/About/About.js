@@ -13,7 +13,7 @@ import img7 from '../../assets/images/banner2 (2).jpg';
 
 const About = () => {
     return (
-        <div className="container ">
+        <div className="container overflow-hidden ">
         <div className="about-section mb-5">
         <Bounce left cascade >
             <h1 className="mt-5">ABOUT OUR AGENCY</h1>

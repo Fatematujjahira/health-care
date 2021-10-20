@@ -15,7 +15,7 @@ const Services = () =>
     }, [])
     
     return (
-        <div className="">
+        <div className="overflow-hidden">
             {/* <div className="services-img">
             <div className="col col-sm-12">
             <div className="about-right-section mx-auto p-4">

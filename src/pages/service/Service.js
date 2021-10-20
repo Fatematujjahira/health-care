@@ -9,7 +9,7 @@ const Service = ({ service }) =>
     return (
 
         <Zoom>
-             <div className="col-md-6 col-lg-4 col-sm-12">
+             <div className="col-md-6 col-lg-4 col-sm-12 overflow-hidden">
              <div className="cart m-3">
              
              <div className="cart-details">   
@@ -19,8 +19,8 @@ const Service = ({ service }) =>
               <h4 className=" name fw-bold text-info p-2">{name}</h4>
                <h5 className="fw-bold ">{title}</h5>
               <p>{discription}</p>
-            <Link to={`/details/${id}`}>
-              <button className="btn btn-outline-primary px-5 m-3">{name}</button>
+              <Link to={`/details/${id}`}>
+              <button className="btn btn-outline-primary px-5 m-2">{name}</button>
     
                 </Link>
                 </div>

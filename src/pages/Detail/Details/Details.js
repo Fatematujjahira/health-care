@@ -17,7 +17,7 @@ const Details = () =>
  const selected = services.find(service => service.id === serviceId )
     
     return (
-        <div className="mt-2">
+        <div className="overflow-hidden mt-2">
 
             
             <Card className="mx-auto" style={{ width: '24rem' }}>
