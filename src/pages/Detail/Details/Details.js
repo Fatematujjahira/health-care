@@ -17,20 +17,41 @@ const Details = () =>
  const selected = services.find(service => service.id === serviceId )
     
     return (
-        <div className="">
+        <div className="mt-2">
 
-            {/* <h1>{ selected?.name }</h1> */ }
-            <Card className="mx-auto" style={{ width: '18rem' }}>
+            
+            <Card className="mx-auto" style={{ width: '24rem' }}>
   <Card.Img variant="top" src={ selected?.img } />
   <Card.Body>
     <Card.Title>{ selected?.name }</Card.Title>
-    <Card.Text>
+     <Card.Text>
     { selected?.discription }
     </Card.Text>
+    <div className="">
+      <div className="d-flex justify-content-center ">
+     
+     <div className="m-2 ">
+      <h3><i className="fab fa-facebook-square icon text-primary"></i></h3>
+      </div>
+      <div className="m-2 ">
+      <h3><i className="fab fa-instagram icon text-danger"></i></h3>
+      </div>
+      <div className="m-2">
+      <h3><i className="fab fa-linkedin icon text-primary"></i></h3>
+      </div>
+      <div className="m-2">
+      <h3><i className="fab fa-youtube text-danger icon  "></i></h3>
+      </div>
+      <div className="m-2">
+      <h3><i className="fab fa-twitter icon text-primary"></i></h3>
+      </div>
+      </div>
+     
+     </div><hr />
     <Link to='/service'>
-     <button className="btn btn-outline-primary px-5 m-3">{ selected?.name }</button>
+     <button className="btn btn-outline-primary px-5">{ selected?.name }</button>
     
-                </Link>
+    </Link>
   </Card.Body>
 </Card>
              

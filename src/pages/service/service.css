@@ -2,12 +2,16 @@
     transition: 0.5s;
     border-radius: 5px;
     border: 1px solid gray;
+    box-shadow: 6px 9px 13px  rgb(171, 166, 166);
+
   }
   .cart:hover {
-    box-shadow: 2px 5px 10px gray;
+    box-shadow: 9px 9px 13px  rgb(125, 122, 122);
+    background-color: rgb(182, 242, 255);
+    
   }
   .serviceimg {
-      height: 240px;
+      height: 210px;
       border-bottom: 1px;
   }
   .name{

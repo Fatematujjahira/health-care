@@ -26,7 +26,7 @@ const Footer = () => {
                     
                   </small>
                 </p>
-                <div className=""><hr />
+       <div className=""><hr />
       <div className="d-flex justify-content-center ">
      
      <div className="m-2 ">
